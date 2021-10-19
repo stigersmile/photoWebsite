@@ -1,4 +1,5 @@
 import React from 'react'
+import Search from "../components/Search"
 
 
 const homepage = () => {
@@ -6,6 +7,7 @@ const homepage = () => {
     return (
         <div>
             <h1>This is home page</h1>
+            <Search/>
         </div>
     )
 }
