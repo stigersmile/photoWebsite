@@ -1,16 +1,76 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    color: black;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-ul{
- list-style-type:none;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-@import "./_nav.css"
+a {
+  text-decoration: none;
+  color: black;
+}
 
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: purple;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0rem;
+}
+
+.search input, .search button {
+  font-size: 2rem;
+  padding: 0.25rem;
+  border: 3px solid #2b002b;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0rem;
+  background-color: #cecece;
+}
+/*# sourceMappingURL=style.css.map */

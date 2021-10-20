@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Search from "../components/Search"
 
 
-const homepage = () => {
-    // const auth ="563492ad6f917000010000018b28ef8c975b4f259f86dd1ee6570cec";
+const Homepage = () => {
+     let [input, setInput] = useState("");
+
+    const searchURL =` https://api.pexels.com/v1/search?query=${input}&per_page=15&page=1`
     return (
-        <div>
+        <div style={{minHeight:"100vh"}}>
             <h1>This is home page</h1>
             <Search/>
         </div>
     )
 }
 
-export default homepage
+export default Homepage
